@@ -10,7 +10,7 @@ let resultA = a === minimum ? 1 : 0;
 let resultB;
 
 
-if(a === b === c) {
+if(a == b == c) {
     resultB = 1;
 } else {
     resultB = 0;
