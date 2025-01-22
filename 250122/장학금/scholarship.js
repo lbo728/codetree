@@ -4,7 +4,7 @@ let midResult = Number(input[0]);
 let finalResult = Number(input[1]);
 
 if(midResult >= 90) {
-     if(95 <= finalResult <= 100) {
+     if(finalResult >= 95 ) {
         console.log(100000);
     } else if(finalResult >= 90) {
         console.log(50000);
