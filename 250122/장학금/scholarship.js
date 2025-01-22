@@ -3,6 +3,15 @@ let input = fs.readFileSync(0).toString().trim().split(" ");
 let midResult = Number(input[0]);
 let finalResult = Number(input[1]);
 
-console.log(midResult);
-console.log(finalResult);
+if(midResult >= 90) {
+     if(95 <= finalResult <= 100) {
+        console.log(100000);
+    } else if(finalResult >= 90) {
+        console.log(50000);
+    } else {
+        console.log(0);
+    }
+} else {
+    console.log(0);
+}
 
