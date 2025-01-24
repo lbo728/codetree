@@ -13,6 +13,8 @@ if(a > b && b > c && a > c)  {
     mid = c;
 }  else if (a > b && b < c && a > c ) {
     mid = c;
+} else if (a < b && b < c && a < c){
+    mid = b;
 } else {
     mid = a;
 }
