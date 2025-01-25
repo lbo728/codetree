@@ -6,7 +6,7 @@ let b = Number(input[1]);
 
 let result = "";
 
-for(i = 1; i >= a && i <= b; i++) {
+for(i = a; i <= b; i++) {
     if(i % 2 === 1) {
         result += (i + " ");
     }
