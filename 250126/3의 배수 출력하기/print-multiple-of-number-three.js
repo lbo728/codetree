@@ -5,10 +5,10 @@ let i = 1;
 let result = "";
 
 while(i <= n) {
-    i++;
     if(i % 3 === 0) {
         result += (i + " ");
     }
+    i++;
 }
 
 console.log(result);
