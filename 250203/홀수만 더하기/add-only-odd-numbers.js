@@ -1,10 +1,13 @@
 const fs = require('fs');
-let n = Number(fs.readFileSync(0).toString().trim());
+let input = fs.readFileSync(0).toString().trim().split("\n");
 
-let sum = 0;
+let cnt = 0;
 
-for(i = n; i <= 100; i++) {
-        sum += i;
+for(i = 0; i <= input.length; i++) {
+        let x = Number(input[i]);
+    if(x % 2 == 1 && x % 3 == 0) {
+        cnt += x;
+    }
 }
 
-console.log(sum);
+console.log(cnt);
