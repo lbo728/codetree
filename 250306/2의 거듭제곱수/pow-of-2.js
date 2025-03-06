@@ -1,6 +1,15 @@
 const fs = require('fs');
 const input = fs.readFileSync(0).toString();
 
-const x = Math.sqrt(input);
 
-console.log(x);
+let n = 1;
+let sum = 2;
+
+while(true) {
+    if(input == sum) {
+        console.log(n);
+        break;
+    }
+    sum*=2;
+    n++;
+}
